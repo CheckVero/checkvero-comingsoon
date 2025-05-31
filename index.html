@@ -1,39 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Check Vero - Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fff;
-      color: #0a1f33;
-      text-align: center;
-      padding-top: 40px;
-    }
-    h1 {
-      color: #00c853;
-      font-size: 48px;
-      margin: 20px 0 10px;
-    }
-    p {
-      font-size: 20px;
-      color: #0a1f33;
-      margin: 0 0 30px;
-    }
-    img {
-      width: 300px;
-      height: auto;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Coming Soon</h1>
-  <p>Verifying voice. Securing trust. Built for the AI age.</p>
-  <img src="Check1.png" alt="Check Vero Phone Image"/>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Vero — Coming Soon</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        text-align: center;
+        scroll-behavior: smooth;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeIn 1.5s ease-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 20px;
+      }
+
+      .text-block {
+        flex: 1 1 400px;
+        text-align: left;
+        padding: 20px;
+      }
+
+      .text-block h1 {
+        color: #00c853;
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+
+      .text-block p {
+        font-size: 1.25em;
+        color: #333;
+        max-width: 500px;
+      }
+
+      .image-block {
+        flex: 1 1 400px;
+        padding: 20px;
+      }
+
+      .image-block img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .cta-section {
+        margin-top: 60px;
+        padding-bottom: 80px;
+      }
+
+      .cta-button {
+        background-color: #00c853;
+        color: white;
+        font-size: 1.25em;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #00b14f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-section">
+      <div class="text-block fade-in">
+        <h1>Coming Soon</h1>
+        <p>Verifying voice. Securing trust. Built for the AI age.</p>
+      </div>
+      <div class="image-block">
+        <img src="Check1.png" alt="Check Vero Promo" />
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <a href="mailto:contact@checkvero.org">
+        <button class="cta-button">Get in Touch</button>
+      </a>
+    </div>
+  </body>
 </html>
