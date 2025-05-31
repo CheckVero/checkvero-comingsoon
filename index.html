@@ -8,42 +8,39 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            color: #0f172a;
             background-color: #ffffff;
         }
         .hero {
             height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            text-align: left;
             background-image: url("Check1.png");
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center bottom;
-            padding: 40px;
-            box-sizing: border-box;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8vw;
+            padding-top: 24vh; /* VERDER NAAR BENEDEN */
         }
-        .hero h1 {
-            font-size: 2.5rem;
+        .coming-text {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .coming-text h1 {
+            font-size: 2.8rem; /* LETTERTYPE GROTER */
             color: #22c55e;
-            margin-top: 360px;
-            margin-left: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
+            margin: 0 0 10px 10ch; /* VERDER NAAR RECHTS */
         }
-        .hero p {
-            font-size: 1.2rem;
+        .coming-text p {
+            font-size: 1.1rem;
             color: #0f172a;
-            margin-left: 10px;
-            margin-top: 10px;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
-            animation-delay: 0.5s;
+            margin: 0 0 0 10ch;
         }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
         .section {
             padding: 60px 20px;
             text-align: center;
@@ -70,16 +67,14 @@
         .button:hover {
             background-color: #16a34a;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>Coming Soon</h1>
-        <p>Verifying voice. Securing trust. Built for the AI age.</p>
+        <div class="coming-text">
+            <h1>COMING SOON</h1>
+            <p>Verifying voice. Securing trust. Built for the AI age.</p>
+        </div>
     </div>
     <div class="section">
         <h2>A call for truth in every ring</h2>
