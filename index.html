@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Check Vero – Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #0f172a;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-      overflow-y: auto;
-    }
-    .hero {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-      max-width: 100%;
-    }
-    .text-block {
-      flex: 1;
-      padding-right: 40px;
-    }
-    .title {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s ease-in-out forwards;
-      animation-delay: 1s;
-    }
-    .fade-in h2 {
-      color: #22c55e;
-      font-size: 2rem;
-      margin: 0;
-    }
-    .fade-in p {
-      margin: 0;
-      font-size: 1rem;
-      margin-top: 8px;
-    }
-    .image-block {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-    .image-block img {
-      width: 450px; /* Verkleind naar grootte van je voorbeeld */
-      height: auto;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Check Vero – Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: #0f172a;
+            background-color: #ffffff;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            background-image: url("Check1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #22c55e;
+            margin-top: 360px;
+            margin-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #0f172a;
+            margin-left: 10px;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #22c55e;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #16a34a;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <div class="hero">
-      <div class="text-block">
-        <div class="title">Who’s really calling you?</div>
-        <div class="fade-in">
-          <h2>COMING SOON</h2>
-          <p>Verifying voice. Securing trust. Built for the AI age.</p>
-        </div>
-      </div>
-      <div class="image-block">
-        <img src="Check1.png" alt="Check Vero Phone Image" />
-      </div>
+        <h1>Coming Soon</h1>
+        <p>Verifying voice. Securing trust. Built for the AI age.</p>
     </div>
-  </div>
+    <div class="section">
+        <h2>A call for truth in every ring</h2>
+        <p>Join us to verify the world’s information.</p>
+        <a href="mailto:hello@checkvero.org" class="button">Get in touch</a>
+    </div>
 </body>
 </html>
