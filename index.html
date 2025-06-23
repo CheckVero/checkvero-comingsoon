@@ -13,28 +13,21 @@
     }
 
     .hero {
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px;
       box-sizing: border-box;
     }
 
     .hero-image {
-      max-width: 480px;
-      width: 100%;
+      max-width: 250px;
+      width: 80%;
       height: auto;
-      margin-bottom: 8px;
-    }
-
-    .small-tagline {
-      font-size: 0.85rem;
-      color: #0f172a;
-      margin: 0 0 24px;
-      font-weight: 500;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
@@ -101,13 +94,12 @@
     }
 
     @media (max-width: 768px) {
-      .hero-image {
-        max-width: 320px;
+      .hero {
+        padding: 40px 20px;
       }
 
-      .small-tagline {
-        font-size: 0.75rem;
-        margin-bottom: 16px;
+      .hero-image {
+        max-width: 200px;
       }
 
       .hero h1 {
@@ -137,8 +129,7 @@
 <body>
   <div class="hero">
     <img src="Check1.png" alt="Phone illustration" class="hero-image" />
-    <p class="small-tagline">Trust starts with the first ring</p>
-    <h1>COMING SOON</h1>
+    <h1>Coming Soon</h1>
     <p>Verifying voice. Securing trust. Built for the AI age.</p>
   </div>
 
