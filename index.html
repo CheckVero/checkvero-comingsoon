@@ -5,6 +5,10 @@
   <title>Check Vero – Coming Soon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -13,39 +17,34 @@
     }
 
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 40px;
-      box-sizing: border-box;
+      padding: 40px 20px;
     }
 
     .hero-image {
-      max-width: 250px;
-      width: 80%;
+      max-width: 360px;
+      width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .hero h1 {
       font-size: 2.5rem;
       color: #22c55e;
-      margin-bottom: 10px;
+      margin: 0 0 16px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      opacity: 0;
-      animation: fadeIn 1.5s ease-in-out forwards;
     }
 
     .hero p {
       font-size: 1.2rem;
+      margin: 0;
       color: #0f172a;
-      opacity: 0;
-      animation: fadeIn 1.5s ease-in-out forwards;
-      animation-delay: 0.5s;
     }
 
     .section {
@@ -82,28 +81,15 @@
       background-color: #16a34a;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     @media (max-width: 768px) {
-      .hero {
-        padding: 40px 20px;
-      }
-
       .hero-image {
-        max-width: 200px;
+        max-width: 280px;
+        margin-bottom: 20px;
       }
 
       .hero h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-bottom: 12px;
       }
 
       .hero p {
@@ -119,17 +105,18 @@
       }
 
       .button {
+        width: 100%;
         font-size: 1rem;
         padding: 12px 20px;
-        width: 100%;
       }
     }
   </style>
 </head>
 <body>
+
   <div class="hero">
     <img src="Check1.png" alt="Phone illustration" class="hero-image" />
-    <h1>Coming Soon</h1>
+    <h1>COMING SOON</h1>
     <p>Verifying voice. Securing trust. Built for the AI age.</p>
   </div>
 
@@ -138,5 +125,6 @@
     <p>Join us to verify the world’s information.</p>
     <a href="mailto:hello@checkvero.org" class="button">Get in touch</a>
   </div>
+
 </body>
 </html>
