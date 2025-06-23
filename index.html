@@ -74,10 +74,11 @@
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
             @media (max-width: 768px) {
-  .hero {
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
+    .hero {
+    flex-direction: column-reverse;
+    background-position: top center;
+    background-size: 80%;
+    padding-top: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
